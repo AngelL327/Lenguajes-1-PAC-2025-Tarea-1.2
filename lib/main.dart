@@ -57,7 +57,9 @@ class _HomePageState extends State<HomePage> {
               "Collaborate on a list, and even assign individual tasks."),
           _IconNuevo(Icons.category, const Color.fromARGB(255, 18, 113, 221), "Powerful Organization",
               "Create new lists to match your needs, categorize reminders with tags, and manage reminders around your work flow with Smart Lists."),
-          Spacer(),  
+          SizedBox(
+          height: MediaQuery.of(context).size.height * 0.25, // 25% de la altura de la pantalla
+        ),
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
